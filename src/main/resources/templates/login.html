@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+
+<title>Login</title>
+
+</head>
+<body>
+	<h1>Login Below</h1>
+	<div>
+		username: <input type="text" id="username" th:field="${user.username}" />
+	</div>
+	<div>
+		password: <input type="password" id="password"
+			th:field="${user.password}" />
+	</div>
+	<div>
+		<input type="button" id="submitBtn" value="submit" />
+	</div>
+	<script type="text/javascript" src="/js/login.js"></script>
+</body>
+</html>
